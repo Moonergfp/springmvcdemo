@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Test {
 
     @RequestMapping("/method")
-    public String method(){
+    public String method(String order_id,String userName){
+        System.out.println("abc===>"+order_id);
+        System.out.println("userName===>"+userName);
         return "index";
     }
 }
